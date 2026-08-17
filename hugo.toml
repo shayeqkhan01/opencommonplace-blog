@@ -1,0 +1,72 @@
+baseURL = 'https://opencommonplace.com/'
+languageCode = 'en-us'
+title = 'Open Commonplace'
+theme = 'PaperMod'
+
+pagination.pagerSize = 8
+
+[params]
+  env = "production"
+  description = "Book notes, summaries, and key takeaways from the community of readers."
+  keywords = ["book notes", "summaries", "key takeaways", "commonplace", "reading"]
+  author = "Open Commonplace"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  # Post features
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  disableSpecial1stPost = false
+
+  # Homepage intro
+  [params.homeInfoParams]
+    Title = "Open Commonplace"
+    Content = """
+A shared digital commonplace book.
+
+Discover insights, key takeaways, and notes from books — contributed by a community of readers.
+"""
+
+  # Social icons (update the URLs with real ones later)
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/yourusername/opencommonplace"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+  # Optional: X / Twitter
+  # [[params.socialIcons]]
+  #   name = "x"
+  #   url = "https://x.com/yourhandle"
+
+# Main menu
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Notes"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 5
