@@ -1,22 +1,37 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: "shayeqkhan01/opencommonplace-blog"
   branch: main
-
-local_backend: true
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "posts"
-    label: "Book Notes"
+  - name: "blog"
+    label: "Blog"
     folder: "content/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string", hint: "Usually the book title or the main insight" }
-      - { label: "Book Author", name: "book_author", widget: "string", required: false }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+
+      - label: Description
+        name: description
+        widget: text
+        required: false
+
+      - label: Featured Image
+        name: image
+        widget: image
+        required: false
+
+      - label: Body
+        name: body
+        widget: markdown

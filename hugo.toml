@@ -1,4 +1,4 @@
-baseURL = 'https://opencommonplace.com/'
+baseURL = 'https://blog.opencommonplace.com/'
 languageCode = 'en-us'
 title = 'Open Commonplace'
 theme = 'PaperMod'
@@ -39,29 +39,3 @@ Discover insights, key takeaways, and notes from books — contributed by a comm
   [[params.socialIcons]]
     name = "x"
     url = "https://x.com/opencommonplace"
-
-# Main menu
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
-
-[[menu.main]]
-  name = "Notes"
-  url = "/posts/"
-  weight = 2
-
-[[menu.main]]
-  name = "Tags"
-  url = "/tags/"
-  weight = 3
-
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = 4
-
-[[menu.main]]
-  name = "Search"
-  url = "/search/"
-  weight = 5
