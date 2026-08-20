@@ -1,0 +1,53 @@
+{{- define "main" -}}
+<div class="news-shell">
+  <section class="news-hero">
+    <p class="eyebrow">Open Commonplace / Notes worth keeping</p>
+    <h1>{{ site.Params.homeTitle | default "Ideas for a more thoughtful life." }}</h1>
+    <p class="hero-copy">{{ site.Params.homeDescription | default "A living archive of book notes, mental models, and useful questions, gathered in public." }}</p>
+    <a class="text-link" href="{{ "blog/" | relURL }}">Browse all notes <span aria-hidden="true">↗</span></a>
+  </section>
+
+  {{- $posts := where site.RegularPages "Section" "blog" -}}
+  {{- $featured := where $posts "Params.featured" true -}}
+  {{- with index $featured 0 -}}
+  <section class="featured-story" aria-labelledby="featured-title">
+    <div class="story-label">Featured note</div>
+    <div class="featured-grid">
+      {{- with .Params.image -}}
+      <a class="story-image" href="{{ $.RelPermalink }}" aria-label="Read {{ $.Title }}">
+        <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" loading="eager">
+      </a>
+      {{- end -}}
+      <div class="story-copy">
+        {{- with .Params.category -}}<p class="story-category">{{ . }}</p>{{- end -}}
+        <h2 id="featured-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Description | default (.Summary | plainify | truncate 190) }}</p>
+        <p class="story-meta">{{ .Date.Format "January 2, 2006" }} <span aria-hidden="true">·</span> {{ .ReadingTime }} min read</p>
+      </div>
+    </div>
+  </section>
+  {{- end -}}
+
+  <section class="latest-section" aria-labelledby="latest-title">
+    <div class="section-heading">
+      <p class="eyebrow">The archive</p>
+      <h2 id="latest-title">Latest notes</h2>
+    </div>
+    <div class="story-list">
+      {{- range first 8 $posts -}}
+      <article class="story-row">
+        <div class="story-row-date">{{ .Date.Format "Jan 02, 2006" }}</div>
+        <div class="story-row-content">
+          {{- with .Params.category -}}<p class="story-category">{{ . }}</p>{{- end -}}
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ .Description | default (.Summary | plainify | truncate 160) }}</p>
+        </div>
+        <a class="row-arrow" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">↗</a>
+      </article>
+      {{- else -}}
+      <p class="empty-state">New notes are on the way.</p>
+      {{- end -}}
+    </div>
+  </section>
+</div>
+{{- end -}}

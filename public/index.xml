@@ -9,11 +9,11 @@
     <lastBuildDate>Wed, 19 Aug 2026 00:09:45 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello World</title>
+      <title>How to make a commonplace book useful</title>
       <link>http://localhost:1313/blog/hello-world/</link>
       <pubDate>Wed, 19 Aug 2026 00:09:45 +0000</pubDate>
       <guid>http://localhost:1313/blog/hello-world/</guid>
-      <description>&lt;h1 id=&#34;this-is-the-way-that-things-are-done-here&#34;&gt;This is the way that things are done here.&lt;/h1&gt;</description>
+      <description>A simple starting point for turning scattered highlights into ideas you can return to.</description>
     </item>
     <item>
       <title>About</title>
@@ -23,13 +23,6 @@
       <description>&lt;p&gt;&lt;strong&gt;Open Commonplace&lt;/strong&gt; is a shared digital commonplace book.&lt;/p&gt;
 &lt;p&gt;We collect and share book notes, key takeaways, mental models, and memorable passages — so insights from great books stay useful and discoverable.&lt;/p&gt;
 &lt;p&gt;Anyone can contribute. The goal is simple: make reading more cumulative and less ephemeral.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>This is the best thing possible</title>
-      <link>http://localhost:1313/posts/2026-08-17-this-is-the-best-thing-possible/</link>
-      <pubDate>Mon, 17 Aug 2026 05:41:00 +0530</pubDate>
-      <guid>http://localhost:1313/posts/2026-08-17-this-is-the-best-thing-possible/</guid>
-      <description>&lt;p&gt;How do we come across this? Through pure luck I guess.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -10,26 +10,23 @@ pagination.pagerSize = 8
   description = "Book notes, summaries, and key takeaways from the community of readers."
   keywords = ["book notes", "summaries", "key takeaways", "commonplace", "reading"]
   author = "Open Commonplace"
-  defaultTheme = "auto"
-  disableThemeToggle = false
+  defaultTheme = "light"
+  disableThemeToggle = true
+  homeTitle = "Ideas for a more thoughtful life."
+  homeDescription = "A living archive of book notes, mental models, and useful questions, gathered in public."
+  [params.label]
+    text = "Open Commonplace"
 
   # Post features
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
-  ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowWordCount = true
   disableSpecial1stPost = false
 
   # Homepage intro
   [params.homeInfoParams]
-    Title = "Open Commonplace"
-    Content = """
-A shared digital commonplace book.
-
-Discover insights, key takeaways, and notes from books — contributed by a community of readers.
-"""
 
   # Social icons (update the URLs with real ones later)
   [[params.socialIcons]]
@@ -39,3 +36,13 @@ Discover insights, key takeaways, and notes from books — contributed by a comm
   [[params.socialIcons]]
     name = "x"
     url = "https://x.com/opencommonplace"
+
+[[menu.main]]
+  name = "Notes"
+  url = "/blog/"
+  weight = 10
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 20

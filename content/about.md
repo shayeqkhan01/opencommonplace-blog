@@ -1,6 +1,6 @@
 +++
 date = '2026-08-17T00:14:17Z'
-draft = true
+draft = false
 title = 'About'
 +++
 **Open Commonplace** is a shared digital commonplace book.
