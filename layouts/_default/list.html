@@ -1,13 +1,16 @@
 {{- define "main" -}}
 <div class="main">
   <section class="news-hero">
-    <h1>{{ site.Params.homeTitle | default "Ideas for a more thoughtful life." }}</h1>
-    <p class="hero-copy">{{ site.Params.homeDescription | default "A repository of practical human wisdom—built from authentic reader notes, not AI summaries." }}</p>
+    <h1>{{ .Title }}</h1>
+    {{- if .Content -}}
+    <div class="hero-copy">
+      {{ .Content }}
+    </div>
+    {{- end -}}
   </section>
 
-  {{- $posts := where site.RegularPages "Section" "blog" -}}
   <div class="story-grid">
-    {{- range first 12 $posts -}}
+    {{- range .Pages -}}
     <a href="{{ .RelPermalink }}" class="story-card">
       {{- if .Params.image -}}
       <div class="story-image-wrapper">
@@ -15,7 +18,6 @@
       </div>
       {{- else -}}
       <div class="story-image-wrapper">
-        <!-- Placeholder if no image is present -->
         <div style="width: 100%; height: 100%; background: #f0f0f0;"></div>
       </div>
       {{- end -}}
@@ -27,7 +29,7 @@
       <p class="story-excerpt">{{ .Description | default (.Summary | plainify | truncate 160) }}</p>
     </a>
     {{- else -}}
-    <p class="empty-state">New notes are on the way.</p>
+    <p class="empty-state">No notes found.</p>
     {{- end -}}
   </div>
 </div>

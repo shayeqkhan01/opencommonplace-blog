@@ -1,0 +1,26 @@
+{{- define "main" -}}
+<div class="main">
+  <article class="post-single">
+    <header class="post-header">
+      <div class="story-meta" style="justify-content: center; margin-bottom: 24px;">
+        {{- with .Params.category -}}<span class="story-category">{{ . }}</span>{{- end -}}
+        <span class="story-date">{{ .Date.Format "January 2, 2006" }}</span>
+      </div>
+      <h1 class="post-title" style="text-align: center;">{{ .Title }}</h1>
+      {{- if .Description -}}
+      <p class="hero-copy" style="text-align: center; margin: 24px auto 0;">{{ .Description }}</p>
+      {{- end -}}
+    </header>
+
+    {{- if .Params.image -}}
+    <div class="story-image-wrapper" style="max-width: 1000px; margin: 0 auto 60px;">
+      <img src="{{ .Params.image }}" alt="{{ .Params.image_alt | default .Title }}" style="border-radius: 0; transform: none; width: 100%;" />
+    </div>
+    {{- end -}}
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+  </article>
+</div>
+{{- end -}}

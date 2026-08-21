@@ -5,6 +5,8 @@ backend:
   base_url: "https://auth.opencommonplace.com"
   auth_endpoint: "auth"
 
+local_backend: true
+
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 

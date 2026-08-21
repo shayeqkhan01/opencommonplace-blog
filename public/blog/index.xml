@@ -6,14 +6,6 @@
     <description>Recent content in Blogs on Open Commonplace</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2026 00:09:45 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to make a commonplace book useful</title>
-      <link>http://localhost:1313/blog/hello-world/</link>
-      <pubDate>Wed, 19 Aug 2026 00:09:45 +0000</pubDate>
-      <guid>http://localhost:1313/blog/hello-world/</guid>
-      <description>A simple starting point for turning scattered highlights into ideas you can return to.</description>
-    </item>
   </channel>
 </rss>

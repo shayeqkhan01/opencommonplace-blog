@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Open Commonplace</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 05:41:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 08:08:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>This is the best thing possible</title>
-      <link>http://localhost:1313/posts/2026-08-17-this-is-the-best-thing-possible/</link>
-      <pubDate>Mon, 17 Aug 2026 05:41:00 +0530</pubDate>
-      <guid>http://localhost:1313/posts/2026-08-17-this-is-the-best-thing-possible/</guid>
-      <description>&lt;p&gt;How do we come across this? Through pure luck I guess.&lt;/p&gt;</description>
+      <title>This thing is fucking working</title>
+      <link>http://localhost:1313/posts/this-thing-is-fucking-working/</link>
+      <pubDate>Wed, 19 Aug 2026 08:08:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/this-thing-is-fucking-working/</guid>
+      <description>Hell baby</description>
     </item>
   </channel>
 </rss>

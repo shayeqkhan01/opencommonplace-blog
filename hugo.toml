@@ -9,13 +9,22 @@ pagination.pagerSize = 8
   env = "production"
   description = "Book notes, summaries, and key takeaways from the community of readers."
   keywords = ["book notes", "summaries", "key takeaways", "commonplace", "reading"]
-  author = "Open Commonplace"
+  author = "Open Commonplace Blog"
   defaultTheme = "light"
   disableThemeToggle = true
   homeTitle = "Ideas for a more thoughtful life."
-  homeDescription = "A living archive of book notes, mental models, and useful questions, gathered in public."
+  homeDescription = "A repository of practical human wisdom—built from authentic reader notes, not AI summaries."
+  [params.assets]
+    favicon = "favicon.ico"
+    favicon16x16 = "favicon-16x16.png"
+    favicon32x32 = "favicon-32x32.png"
+    apple_touch_icon = "apple-touch-icon.png"
+    safari_pinned_tab = "safari-pinned-tab.svg"
+
   [params.label]
-    text = "Open Commonplace"
+    text = "Open Commonplace Blog"
+    icon = "images/logo.svg"
+    iconHeight = 32
 
   # Post features
   ShowReadingTime = true
@@ -23,7 +32,7 @@ pagination.pagerSize = 8
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
   ShowWordCount = true
-  disableSpecial1stPost = false
+  disableSpecial1stPost = true
 
   # Homepage intro
   [params.homeInfoParams]
@@ -38,11 +47,6 @@ pagination.pagerSize = 8
     url = "https://x.com/opencommonplace"
 
 [[menu.main]]
-  name = "Notes"
-  url = "/blog/"
-  weight = 10
-
-[[menu.main]]
-  name = "About"
-  url = "/about/"
+  name = "Open Commonplace"
+  url = "https://opencommonplace.com"
   weight = 20
